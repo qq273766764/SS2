@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f0d5cb8d-e4c1-4120-81c8-066bbf0fb93c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60698/SCacheService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SCacheService.wsdl" MetadataType="Wsdl" ID="8dfe7cfc-cc70-47e8-bac0-f92da09b834a" SourceId="1" SourceUrl="http://localhost:60698/SCacheService.svc?wsdl" />
+    <MetadataFile FileName="SCacheService.xsd" MetadataType="Schema" ID="5cd492b3-2db8-4f76-b516-c6d2d753b489" SourceId="1" SourceUrl="http://localhost:60698/SCacheService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SCacheService21.xsd" MetadataType="Schema" ID="06308894-b139-43fd-936c-5d7989c6b9b1" SourceId="1" SourceUrl="http://localhost:60698/SCacheService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SCacheService.disco" MetadataType="Disco" ID="0c3a5ce1-375d-4b1e-a0c4-a62e9b31b83e" SourceId="1" SourceUrl="http://localhost:60698/SCacheService.svc?disco" />
+    <MetadataFile FileName="SCacheService1.xsd" MetadataType="Schema" ID="54083b2f-7c0a-4ca4-8e55-43ec8ef8841d" SourceId="1" SourceUrl="http://localhost:60698/SCacheService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

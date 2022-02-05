@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EasyBpmDB">
+  <DataContextMoniker Name="/EasyBpmDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4ddd55d2-233c-437c-858d-ac88641506bf" absoluteBounds="0.75, 1, 2, 3.5700402832031246">
+      <DataClassMoniker Name="/EasyBpmDBDataContext/INCIDENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1440e162-e706-441d-803b-a7fa00a6dcbb" absoluteBounds="0.765, 1.46, 1.9700000000000002, 3.010040283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64cca976-9153-41fe-b108-64a35b90c526" absoluteBounds="5.25, 1, 2, 2.2764815266927085">
+      <DataClassMoniker Name="/EasyBpmDBDataContext/TASKQUEUE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cf4a982-7079-41f3-b8cf-ec5977d28856" absoluteBounds="5.265, 1.46, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1820c143-469c-4927-95a7-43ecf7c80508" absoluteBounds="3, 1, 2, 5.7875695800781246">
+      <DataClassMoniker Name="/EasyBpmDBDataContext/TASK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2016f07f-a713-400f-94ac-027129f8d8ef" absoluteBounds="3.015, 1.46, 1.9700000000000002, 5.227569580078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

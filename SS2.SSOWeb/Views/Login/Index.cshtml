@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@using (Html.BeginForm())
+{
+    <div style=" width:300px;margin-left:auto; margin-right:auto; padding:20px; border:1px solid #aaa;">
+        <table style="border:none;">
+            <tr>
+                <td>
+                    登录名：
+                </td>
+                <td>
+                    @Html.TextBox("LoginName")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    密码：
+                </td>
+                <td>
+                    @Html.Password("Password")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    <button type="submit">提交</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+}
+

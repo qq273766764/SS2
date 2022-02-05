@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LygcjDB" Class="OCDataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.OC_AUTHORIZATION" Member="OC_AUTHORIZATION">
+    <Type Name="OC_AUTHORIZATION">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="OrgIDs" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OrgNames" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ExcludeOrgIDs" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="ExcludeOrgNames" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="AuthorIDs" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OC_NODE" Member="OC_NODE">
+    <Type Name="OC_NODE">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="IDPath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NamePath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Disabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsMainJob" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Ext001" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext002" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext003" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext004" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext005" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OC_EMPLOYEE" Member="OC_EMPLOYEE">
+    <Type Name="OC_EMPLOYEE">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="IDPath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NamePath" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Disabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsMainJob" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LoginName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="PictureUrl" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PWD" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="WX" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="Jobs" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="DataJson" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ext001" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext002" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext003" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext004" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Ext005" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

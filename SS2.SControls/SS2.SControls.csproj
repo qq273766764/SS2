@@ -1,0 +1,584 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63798CA6-C5B4-4554-8488-EB819A4689B5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SS2</RootNamespace>
+    <AssemblyName>SS2.SControls</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.7.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsposeCells.2014.01.05\lib\net40\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ionic.Zip.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="__SSControls\easyui\easyloader.js" />
+    <Content Include="__SSControls\easyui\jquery.easyui.min.js" />
+    <Content Include="__SSControls\easyui\jquery.min.js" />
+    <Content Include="__SSControls\easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="__SSControls\easyui\newicons.css" />
+    <Content Include="__SSControls\easyui\newicons\add.png" />
+    <Content Include="__SSControls\easyui\newicons\address.png" />
+    <Content Include="__SSControls\easyui\newicons\administrative-docs.png" />
+    <Content Include="__SSControls\easyui\newicons\advertising.png" />
+    <Content Include="__SSControls\easyui\newicons\application.png" />
+    <Content Include="__SSControls\easyui\newicons\archives.png" />
+    <Content Include="__SSControls\easyui\newicons\archives_big.png" />
+    <Content Include="__SSControls\easyui\newicons\array.png" />
+    <Content Include="__SSControls\easyui\newicons\atta.png" />
+    <Content Include="__SSControls\easyui\newicons\attachment.gif" />
+    <Content Include="__SSControls\easyui\newicons\attibutes.png" />
+    <Content Include="__SSControls\easyui\newicons\bank.png" />
+    <Content Include="__SSControls\easyui\newicons\basket.png" />
+    <Content Include="__SSControls\easyui\newicons\bestseller.png" />
+    <Content Include="__SSControls\easyui\newicons\billing.png" />
+    <Content Include="__SSControls\easyui\newicons\bookmark.png" />
+    <Content Include="__SSControls\easyui\newicons\box_share.png" />
+    <Content Include="__SSControls\easyui\newicons\brainstorming.png" />
+    <Content Include="__SSControls\easyui\newicons\business-contact.png" />
+    <Content Include="__SSControls\easyui\newicons\busy.png" />
+    <Content Include="__SSControls\easyui\newicons\button.png" />
+    <Content Include="__SSControls\easyui\newicons\calendar.png" />
+    <Content Include="__SSControls\easyui\newicons\category.png" />
+    <Content Include="__SSControls\easyui\newicons\certificate.png" />
+    <Content Include="__SSControls\easyui\newicons\chart.png" />
+    <Content Include="__SSControls\easyui\newicons\chart_curve.png" />
+    <Content Include="__SSControls\easyui\newicons\chart_line.png" />
+    <Content Include="__SSControls\easyui\newicons\check.png" />
+    <Content Include="__SSControls\easyui\newicons\class.png" />
+    <Content Include="__SSControls\easyui\newicons\class_libraries.png" />
+    <Content Include="__SSControls\easyui\newicons\clipboard_report.png" />
+    <Content Include="__SSControls\easyui\newicons\clock_red.png" />
+    <Content Include="__SSControls\easyui\newicons\coin_stacks_copper_remove.png" />
+    <Content Include="__SSControls\easyui\newicons\coin_stacks_gold_add.png" />
+    <Content Include="__SSControls\easyui\newicons\collaboration.png" />
+    <Content Include="__SSControls\easyui\newicons\comment.png" />
+    <Content Include="__SSControls\easyui\newicons\communication.png" />
+    <Content Include="__SSControls\easyui\newicons\company.gif" />
+    <Content Include="__SSControls\easyui\newicons\config.png" />
+    <Content Include="__SSControls\easyui\newicons\consulting.png" />
+    <Content Include="__SSControls\easyui\newicons\contact.png" />
+    <Content Include="__SSControls\easyui\newicons\cost.png" />
+    <Content Include="__SSControls\easyui\newicons\couch.png" />
+    <Content Include="__SSControls\easyui\newicons\credit-card.png" />
+    <Content Include="__SSControls\easyui\newicons\credit.png" />
+    <Content Include="__SSControls\easyui\newicons\currency_dollar.png" />
+    <Content Include="__SSControls\easyui\newicons\current-work.png" />
+    <Content Include="__SSControls\easyui\newicons\customers.png" />
+    <Content Include="__SSControls\easyui\newicons\cv.png" />
+    <Content Include="__SSControls\easyui\newicons\database.png" />
+    <Content Include="__SSControls\easyui\newicons\data_transfer.png" />
+    <Content Include="__SSControls\easyui\newicons\date.png" />
+    <Content Include="__SSControls\easyui\newicons\delete.png" />
+    <Content Include="__SSControls\easyui\newicons\delete_s.png" />
+    <Content Include="__SSControls\easyui\newicons\delicious.png" />
+    <Content Include="__SSControls\easyui\newicons\department.png" />
+    <Content Include="__SSControls\easyui\newicons\document-library.png" />
+    <Content Include="__SSControls\easyui\newicons\document_delete.png" />
+    <Content Include="__SSControls\easyui\newicons\donate.png" />
+    <Content Include="__SSControls\easyui\newicons\dossier_home.png" />
+    <Content Include="__SSControls\easyui\newicons\down-no.png" />
+    <Content Include="__SSControls\easyui\newicons\down.png" />
+    <Content Include="__SSControls\easyui\newicons\draft.png" />
+    <Content Include="__SSControls\easyui\newicons\draft48.png" />
+    <Content Include="__SSControls\easyui\newicons\drawings.png" />
+    <Content Include="__SSControls\easyui\newicons\edit.png" />
+    <Content Include="__SSControls\easyui\newicons\editcopy.png" />
+    <Content Include="__SSControls\easyui\newicons\edit_undo.png" />
+    <Content Include="__SSControls\easyui\newicons\email.png" />
+    <Content Include="__SSControls\easyui\newicons\emblem_library.png" />
+    <Content Include="__SSControls\easyui\newicons\error_small.png" />
+    <Content Include="__SSControls\easyui\newicons\excel.png" />
+    <Content Include="__SSControls\easyui\newicons\expand.png" />
+    <Content Include="__SSControls\easyui\newicons\extension.png" />
+    <Content Include="__SSControls\easyui\newicons\favicon.ico" />
+    <Content Include="__SSControls\easyui\newicons\featured.png" />
+    <Content Include="__SSControls\easyui\newicons\feed.png" />
+    <Content Include="__SSControls\easyui\newicons\file_doc.png" />
+    <Content Include="__SSControls\easyui\newicons\finished-work.png" />
+    <Content Include="__SSControls\easyui\newicons\fire_big.png" />
+    <Content Include="__SSControls\easyui\newicons\flag.png" />
+    <Content Include="__SSControls\easyui\newicons\folder.png" />
+    <Content Include="__SSControls\easyui\newicons\form_submit.png" />
+    <Content Include="__SSControls\easyui\newicons\free-for-job.png" />
+    <Content Include="__SSControls\easyui\newicons\freelance.png" />
+    <Content Include="__SSControls\easyui\newicons\full-time.png" />
+    <Content Include="__SSControls\easyui\newicons\future-projects.png" />
+    <Content Include="__SSControls\easyui\newicons\globe.png" />
+    <Content Include="__SSControls\easyui\newicons\gnome_edit_clear.png" />
+    <Content Include="__SSControls\easyui\newicons\graphic-design.png" />
+    <Content Include="__SSControls\easyui\newicons\heart.png" />
+    <Content Include="__SSControls\easyui\newicons\hire-me.png" />
+    <Content Include="__SSControls\easyui\newicons\home.png" />
+    <Content Include="__SSControls\easyui\newicons\home_grey.png" />
+    <Content Include="__SSControls\easyui\newicons\home_plus.png" />
+    <Content Include="__SSControls\easyui\newicons\illustration.png" />
+    <Content Include="__SSControls\easyui\newicons\img.png" />
+    <Content Include="__SSControls\easyui\newicons\indicator.gif" />
+    <Content Include="__SSControls\easyui\newicons\invoice.png" />
+    <Content Include="__SSControls\easyui\newicons\issue.png" />
+    <Content Include="__SSControls\easyui\newicons\job.png" />
+    <Content Include="__SSControls\easyui\newicons\laptop_power.png" />
+    <Content Include="__SSControls\easyui\newicons\lib.png" />
+    <Content Include="__SSControls\easyui\newicons\library.png" />
+    <Content Include="__SSControls\easyui\newicons\lightbulb.png" />
+    <Content Include="__SSControls\easyui\newicons\lightning.png" />
+    <Content Include="__SSControls\easyui\newicons\limited-edition.png" />
+    <Content Include="__SSControls\easyui\newicons\link.png" />
+    <Content Include="__SSControls\easyui\newicons\lock.png" />
+    <Content Include="__SSControls\easyui\newicons\login.png" />
+    <Content Include="__SSControls\easyui\newicons\logout.png" />
+    <Content Include="__SSControls\easyui\newicons\marker.png" />
+    <Content Include="__SSControls\easyui\newicons\mark_history.png" />
+    <Content Include="__SSControls\easyui\newicons\meeting_big.png" />
+    <Content Include="__SSControls\easyui\newicons\meeting_small.png" />
+    <Content Include="__SSControls\easyui\newicons\milestone.png" />
+    <Content Include="__SSControls\easyui\newicons\my-account.png" />
+    <Content Include="__SSControls\easyui\newicons\networking.png" />
+    <Content Include="__SSControls\easyui\newicons\new.png" />
+    <Content Include="__SSControls\easyui\newicons\new_edit.png" />
+    <Content Include="__SSControls\easyui\newicons\no.png" />
+    <Content Include="__SSControls\easyui\newicons\ok.png" />
+    <Content Include="__SSControls\easyui\newicons\old-versions.png" />
+    <Content Include="__SSControls\easyui\newicons\order-1.png" />
+    <Content Include="__SSControls\easyui\newicons\order.png" />
+    <Content Include="__SSControls\easyui\newicons\orgchart.png" />
+    <Content Include="__SSControls\easyui\newicons\page_save.png" />
+    <Content Include="__SSControls\easyui\newicons\payment-card.png" />
+    <Content Include="__SSControls\easyui\newicons\paypal.png" />
+    <Content Include="__SSControls\easyui\newicons\pen.png" />
+    <Content Include="__SSControls\easyui\newicons\pencil.png" />
+    <Content Include="__SSControls\easyui\newicons\phone.png" />
+    <Content Include="__SSControls\easyui\newicons\photography.png" />
+    <Content Include="__SSControls\easyui\newicons\picture.png" />
+    <Content Include="__SSControls\easyui\newicons\plus.png" />
+    <Content Include="__SSControls\easyui\newicons\premium.png" />
+    <Content Include="__SSControls\easyui\newicons\preview.png" />
+    <Content Include="__SSControls\easyui\newicons\print.png" />
+    <Content Include="__SSControls\easyui\newicons\probe.png" />
+    <Content Include="__SSControls\easyui\newicons\process.png" />
+    <Content Include="__SSControls\easyui\newicons\product-1.png" />
+    <Content Include="__SSControls\easyui\newicons\product-design.png" />
+    <Content Include="__SSControls\easyui\newicons\product.png" />
+    <Content Include="__SSControls\easyui\newicons\project.png" />
+    <Content Include="__SSControls\easyui\newicons\property.png" />
+    <Content Include="__SSControls\easyui\newicons\property_blue.png" />
+    <Content Include="__SSControls\easyui\newicons\publish.png" />
+    <Content Include="__SSControls\easyui\newicons\recycle_closed.png" />
+    <Content Include="__SSControls\easyui\newicons\recycle_open.png" />
+    <Content Include="__SSControls\easyui\newicons\recycle_small.png" />
+    <Content Include="__SSControls\easyui\newicons\recycling.png" />
+    <Content Include="__SSControls\easyui\newicons\refresh.png" />
+    <Content Include="__SSControls\easyui\newicons\release.png" />
+    <Content Include="__SSControls\easyui\newicons\reply.gif" />
+    <Content Include="__SSControls\easyui\newicons\reply.png" />
+    <Content Include="__SSControls\easyui\newicons\rosette.png" />
+    <Content Include="__SSControls\easyui\newicons\save.png" />
+    <Content Include="__SSControls\easyui\newicons\scratch_new.png" />
+    <Content Include="__SSControls\easyui\newicons\scratch_new_s.png" />
+    <Content Include="__SSControls\easyui\newicons\search.png" />
+    <Content Include="__SSControls\easyui\newicons\select.png" />
+    <Content Include="__SSControls\easyui\newicons\settings.png" />
+    <Content Include="__SSControls\easyui\newicons\shipping.png" />
+    <Content Include="__SSControls\easyui\newicons\showreel.png" />
+    <Content Include="__SSControls\easyui\newicons\sign-in.png" />
+    <Content Include="__SSControls\easyui\newicons\sign-out.png" />
+    <Content Include="__SSControls\easyui\newicons\sign-up.png" />
+    <Content Include="__SSControls\easyui\newicons\sitemap.png" />
+    <Content Include="__SSControls\easyui\newicons\special-offer.png" />
+    <Content Include="__SSControls\easyui\newicons\star-inactive.png" />
+    <Content Include="__SSControls\easyui\newicons\star.png" />
+    <Content Include="__SSControls\easyui\newicons\star_Active.png" />
+    <Content Include="__SSControls\easyui\newicons\statistics.png" />
+    <Content Include="__SSControls\easyui\newicons\stats.png" />
+    <Content Include="__SSControls\easyui\newicons\stuff.png" />
+    <Content Include="__SSControls\easyui\newicons\suppliers.png" />
+    <Content Include="__SSControls\easyui\newicons\table.png" />
+    <Content Include="__SSControls\easyui\newicons\tag.png" />
+    <Content Include="__SSControls\easyui\newicons\template.png" />
+    <Content Include="__SSControls\easyui\newicons\ticket.png" />
+    <Content Include="__SSControls\easyui\newicons\todo.png" />
+    <Content Include="__SSControls\easyui\newicons\toolbar_find.png" />
+    <Content Include="__SSControls\easyui\newicons\transfer.png" />
+    <Content Include="__SSControls\easyui\newicons\tree_diagramm_move.png" />
+    <Content Include="__SSControls\easyui\newicons\twitter.png" />
+    <Content Include="__SSControls\easyui\newicons\up-no.png" />
+    <Content Include="__SSControls\easyui\newicons\up.png" />
+    <Content Include="__SSControls\easyui\newicons\upcoming-work.png" />
+    <Content Include="__SSControls\easyui\newicons\user.png" />
+    <Content Include="__SSControls\easyui\newicons\users_add.png" />
+    <Content Include="__SSControls\easyui\newicons\video.png" />
+    <Content Include="__SSControls\easyui\newicons\video_projector.png" />
+    <Content Include="__SSControls\easyui\newicons\vote.png" />
+    <Content Include="__SSControls\easyui\newicons\warning.png" />
+    <Content Include="__SSControls\easyui\newicons\water.png" />
+    <Content Include="__SSControls\easyui\newicons\weather.png" />
+    <Content Include="__SSControls\easyui\newicons\world.png" />
+    <Content Include="__SSControls\easyui\newicons\xls.gif" />
+    <Content Include="__SSControls\easyui\newicons\x_office_document_template.png" />
+    <Content Include="__SSControls\easyui\newicons\zoom.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\easyui.css" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\blank.gif" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\loading.gif" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\passwordbox_close.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\passwordbox_open.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\tagbox_icons.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="__SSControls\easyui\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="__SSControls\easyui\themes\color.css" />
+    <Content Include="__SSControls\easyui\themes\icon.css" />
+    <Content Include="__SSControls\easyui\themes\icons\back.png" />
+    <Content Include="__SSControls\easyui\themes\icons\blank.gif" />
+    <Content Include="__SSControls\easyui\themes\icons\cancel.png" />
+    <Content Include="__SSControls\easyui\themes\icons\clear.png" />
+    <Content Include="__SSControls\easyui\themes\icons\cut.png" />
+    <Content Include="__SSControls\easyui\themes\icons\edit_add.png" />
+    <Content Include="__SSControls\easyui\themes\icons\edit_remove.png" />
+    <Content Include="__SSControls\easyui\themes\icons\filesave.png" />
+    <Content Include="__SSControls\easyui\themes\icons\filter.png" />
+    <Content Include="__SSControls\easyui\themes\icons\help.png" />
+    <Content Include="__SSControls\easyui\themes\icons\large_chart.png" />
+    <Content Include="__SSControls\easyui\themes\icons\large_clipart.png" />
+    <Content Include="__SSControls\easyui\themes\icons\large_picture.png" />
+    <Content Include="__SSControls\easyui\themes\icons\large_shapes.png" />
+    <Content Include="__SSControls\easyui\themes\icons\large_smartart.png" />
+    <Content Include="__SSControls\easyui\themes\icons\lock.png" />
+    <Content Include="__SSControls\easyui\themes\icons\man.png" />
+    <Content Include="__SSControls\easyui\themes\icons\mini_add.png" />
+    <Content Include="__SSControls\easyui\themes\icons\mini_edit.png" />
+    <Content Include="__SSControls\easyui\themes\icons\mini_refresh.png" />
+    <Content Include="__SSControls\easyui\themes\icons\more.png" />
+    <Content Include="__SSControls\easyui\themes\icons\no.png" />
+    <Content Include="__SSControls\easyui\themes\icons\ok.png" />
+    <Content Include="__SSControls\easyui\themes\icons\pencil.png" />
+    <Content Include="__SSControls\easyui\themes\icons\print.png" />
+    <Content Include="__SSControls\easyui\themes\icons\redo.png" />
+    <Content Include="__SSControls\easyui\themes\icons\reload.png" />
+    <Content Include="__SSControls\easyui\themes\icons\search.png" />
+    <Content Include="__SSControls\easyui\themes\icons\sum.png" />
+    <Content Include="__SSControls\easyui\themes\icons\tip.png" />
+    <Content Include="__SSControls\easyui\themes\icons\undo.png" />
+    <EmbeddedResource Include="__SSControls\ssFile.js" />
+    <EmbeddedResource Include="__SSControls\page_gridlist.aspx" />
+    <EmbeddedResource Include="__SSControls\page_gridlist_edit.aspx" />
+    <EmbeddedResource Include="__SSControls\nnf.main.js" />
+    <EmbeddedResource Include="__SSControls\nnf.main.css" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\easyui.css" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\accordion_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\blank.gif" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\calendar_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\combo_arrow.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\datagrid_icons.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\datebox_arrow.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\layout_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\linkbutton_bg.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\loading.gif" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\menu_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\messager_icons.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\pagination_icons.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\panel_tools.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\passwordbox_close.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\passwordbox_open.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\searchbox_button.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\slider_handle.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\spinner_arrows.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\tabs_icons.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\tree_icons.png" />
+    <Content Include="__SSControls\easyui\themes\metro-blue\images\validatebox_warning.png" />
+    <EmbeddedResource Include="__SSControls\ssDialog_easyui.js" />
+    <Content Include="__SSControls\webuploader\Uploader.swf" />
+    <Content Include="__SSControls\webuploader\webuploader.css" />
+    <Content Include="__SSControls\webuploader\webuploader.custom.js" />
+    <Content Include="__SSControls\webuploader\webuploader.custom.min.js" />
+    <Content Include="__SSControls\webuploader\webuploader.fis.js" />
+    <Content Include="__SSControls\webuploader\webuploader.flashonly.js" />
+    <Content Include="__SSControls\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="__SSControls\webuploader\webuploader.html5only.js" />
+    <Content Include="__SSControls\webuploader\webuploader.html5only.min.js" />
+    <Content Include="__SSControls\webuploader\webuploader.js" />
+    <Content Include="__SSControls\webuploader\webuploader.min.js" />
+    <Content Include="__SSControls\webuploader\webuploader.noimage.js" />
+    <Content Include="__SSControls\webuploader\webuploader.noimage.min.js" />
+    <Content Include="__SSControls\webuploader\webuploader.nolog.js" />
+    <Content Include="__SSControls\webuploader\webuploader.nolog.min.js" />
+    <Content Include="__SSControls\webuploader\webuploader.withoutimage.js" />
+    <Content Include="__SSControls\webuploader\webuploader.withoutimage.min.js" />
+    <EmbeddedResource Include="__SSControls\page_upload.aspx" />
+    <EmbeddedResource Include="__SSControls\ssDialog.js" />
+    <EmbeddedResource Include="__SSControls\page_dialog.aspx" />
+    <EmbeddedResource Include="__SSControls\vue.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SReport\BootStrap\BSTableOption.cs" />
+    <Compile Include="SReport\ReportHelper.cs" />
+    <Compile Include="TableHelper\DataColumn.cs" />
+    <Compile Include="DataConvertHelper.cs" />
+    <Compile Include="DesHelper.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Compile Include="InitControlsRes.cs" />
+    <Compile Include="MD5Helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SGridList\Configuration.cs" />
+    <Compile Include="SGridList\GridColumn.cs" />
+    <Compile Include="SGridList\GridDataSource.cs" />
+    <Compile Include="SGridList\GridDSHelper.cs" />
+    <Compile Include="SGridList\GridEditor.cs" />
+    <Compile Include="SGridList\GridEditorMode.cs" />
+    <Compile Include="SGridList\GridLayOut.cs" />
+    <Compile Include="SGridList\GridLayOutPanel.cs" />
+    <Compile Include="SGridList\GridList.cs" />
+    <Compile Include="SGridList\GridSearch.cs" />
+    <Compile Include="SReport\BootStrap\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SReport\ImportCore.cs" />
+    <Compile Include="SReport\SearchHelperBase.cs" />
+    <Compile Include="SReport\BootStrap\SearchHtmlHelper.cs" />
+    <Compile Include="SReport\ImportProvider.cs" />
+    <Compile Include="SReport\Model\ReportSetting.cs" />
+    <Compile Include="SReport\ReportSqlValidator.cs" />
+    <Compile Include="SDialog\Configuration.cs" />
+    <Compile Include="SDialog\DataServer.cs" />
+    <Compile Include="SDialog\DialogField.cs" />
+    <Compile Include="SDialog\DialogItem.cs" />
+    <Compile Include="SDialog\DialogPara.cs" />
+    <Compile Include="SDialog\DialogSearch.cs" />
+    <Compile Include="SDialog\DialogTree.cs" />
+    <Compile Include="SDialog\DialogTreeJson.cs" />
+    <Compile Include="SDialog\FilterType.cs" />
+    <Compile Include="TableHelper\DataColumnType.cs" />
+    <Compile Include="TableHelper\DataHelper.cs" />
+    <Compile Include="TableHelper\DBHelper.cs" />
+    <Compile Include="SFile\Configuration.cs" />
+    <Compile Include="SFile\FileApi.cs" />
+    <Compile Include="SFile\FileDB.cs" />
+    <Compile Include="SFile\Model\FS.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FS.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="SFile\Model\partial.cs" />
+    <Compile Include="SFile\PathHelper.cs" />
+    <Compile Include="SReport\Enums.cs" />
+    <Compile Include="SReport\IReportType.cs" />
+    <Compile Include="SReport\Model\gr_Axis.cs" />
+    <Compile Include="SReport\Model\gr_Connection.cs" />
+    <Compile Include="SReport\Model\gr_CustomSource.cs" />
+    <Compile Include="SReport\Model\gr_DataSource.cs" />
+    <Compile Include="SReport\Model\gr_Report.cs" />
+    <Compile Include="SReport\Model\gr_Search.cs" />
+    <Compile Include="SReport\Model\gr_Static.cs" />
+    <Compile Include="SReport\ReportCellFormatHelper.cs" />
+    <Compile Include="SReport\ReportStaticColumnManager.cs" />
+    <Compile Include="SReport\ReportStaticColumsType.cs" />
+    <Compile Include="SReport\ReportTypesManager.cs" />
+    <Compile Include="SReport\ReportTypes\ReportSettingItem.cs" />
+    <Compile Include="SReport\ReportTypes\交叉统计.cs" />
+    <Compile Include="SReport\ReportTypes\折线条.cs" />
+    <Compile Include="SReport\ReportTypes\明细列表.cs" />
+    <Compile Include="SReport\ReportTypes\直方图.cs" />
+    <Compile Include="SReport\ReportTypes\饼图.cs" />
+    <Compile Include="SReport\ReportVariable.cs" />
+    <Compile Include="SReport\ReportVariableCollection.cs" />
+    <Compile Include="SReport\ReportViewHelper.cs" />
+    <Compile Include="TableHelper\TableStructure.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="ZipHelper.cs" />
+    <Compile Include="__SSControls\ds.ashx.cs">
+      <DependentUpon>ds.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="__SSControls\export.ashx.cs">
+      <DependentUpon>export.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="__SSControls\file.ashx.cs">
+      <DependentUpon>file.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="__SSControls\page_dialog.aspx.cs">
+      <DependentUpon>page_dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="__SSControls\page_dialog.aspx.designer.cs">
+      <DependentUpon>page_dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="__SSControls\page_gridlist.aspx.cs">
+      <DependentUpon>page_gridlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="__SSControls\page_gridlist.aspx.designer.cs">
+      <DependentUpon>page_gridlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="__SSControls\page_gridlist_edit.aspx.cs">
+      <DependentUpon>page_gridlist_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="__SSControls\page_gridlist_edit.aspx.designer.cs">
+      <DependentUpon>page_gridlist_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="__SSControls\page_upload.aspx.cs">
+      <DependentUpon>page_upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="__SSControls\page_upload.aspx.designer.cs">
+      <DependentUpon>page_upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="SFile\Model\FS.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>FS.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="SFile\Model\FS.dbml.layout">
+      <DependentUpon>FS.dbml</DependentUpon>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <EmbeddedResource Include="__SSControls\easyui.zip" />
+    <EmbeddedResource Include="__SSControls\webuploader.zip" />
+    <Content Include="__SSControls\webuploader\README.md" />
+    <EmbeddedResource Include="__SSControls\file.ashx" />
+    <EmbeddedResource Include="__SSControls\ds.ashx" />
+    <EmbeddedResource Include="__SSControls\export.ashx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SS2.CfgHelper\SS2.CfgHelper.csproj">
+      <Project>{68d72850-c8d4-4314-bd48-d4d562879fa5}</Project>
+      <Name>SS2.CfgHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SS2.SSONet\SS2.SSONet.csproj">
+      <Project>{b4fb7591-755b-439d-b55b-e3f16db14a5e}</Project>
+      <Name>SS2.SSONet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58083</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58083/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EasyBpm" Class="EasyBpmDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.INCIDENT" Member="INCIDENT">
+    <Type Name="INCIDENT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DATAID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="INCIDENTNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PROCESSID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PROCESSNAME" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="SUMMARY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STARTTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ENDTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="STATUSTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="INITIATORID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="INITIATORNAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ACTIVEUSERNAMES" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="ACTIVESTEPLABELS" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="ACTIVETASKOBJECTS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TASKQUEUE" Member="TASKQUEUE">
+    <Type Name="TASKQUEUE">
+      <Column Name="TASKID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="OPNION" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SUMMARY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DATAID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="QUEUETIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RETRIES" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TASK" Member="TASK">
+    <Type Name="TASK">
+      <Column Name="TASKID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PROCESSNAME" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="PROCESSID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="INCIDENTNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TASKUSERID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TASKUSERNAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ASSIGNTOUSERID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ASSIGNTOUSERNAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="STARTTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ENDTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="COMPLETEDTIMEOUT" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ISTATUS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDATAID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ISTARTTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IENDTIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SUMMARY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IACTIVEUSERNAMES" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="IACTIVESTEPLABELS" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="IACTIVETASKOBJECTS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STEPID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="STEPLABEL" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="PREVTASKID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OPNION" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="COMMENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="INITIATORID" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="INITIATORNAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

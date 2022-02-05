@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="OCDataBase">
+  <DataContextMoniker Name="/OCDataBaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="819513b9-bb54-4a9f-9956-e6f89388949d" absoluteBounds="5.125, 0.75, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/OCDataBaseDataContext/OC_AUTHORIZATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eedd7be0-6db7-44ff-9209-79b6243e7177" absoluteBounds="5.14, 1.21, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44b0be0f-3974-48dc-859d-0088ff844b75" absoluteBounds="2.875, 0.75, 2, 3.3852461751302076">
+      <DataClassMoniker Name="/OCDataBaseDataContext/OC_NODE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ee40746-c181-4066-9294-c1473a241b43" absoluteBounds="2.89, 1.21, 1.9700000000000002, 2.825246175130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6de7a463-746f-459d-9ac4-30eb6ee5a781" absoluteBounds="0.625, 0.875, 2, 5.4179813639322907">
+      <DataClassMoniker Name="/OCDataBaseDataContext/OC_EMPLOYEE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4eef5aef-4d14-4d0a-80a9-7d0a63452220" absoluteBounds="0.63999999999999968, 1.335, 1.9700000000000002, 4.8579813639322911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

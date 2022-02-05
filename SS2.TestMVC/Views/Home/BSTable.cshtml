@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "BSTable";
+}
+@section styles{
+    <link href="~/Content/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-table/custom.css" rel="stylesheet" />
+}
+<div style="height:50px;"></div>
+
+@Html.Raw(ViewBag.searchHtml)
+
+<div id="toolbar" class="columns columns-right btn-group pull-left">
+    <a class="btn btn-primary btn-sm" onclick="onSearch()">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;搜&nbsp;索&nbsp;
+    </a>
+</div>
+<table id="Report" class="table table-striped table-bordered table-hover dataTables-example"></table>
+
+@section scripts{
+    <script src="~/Scripts/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="~/Scripts/bootstrap-table/bootstrap-table-locale-all.min.js"></script>
+    @Scripts.Render(Url.Action("Index", "BootStrapTable", new { rid = 1 }))
+    <script type="text/javascript">
+        function onSearch() {
+            $("#Report").bootstrapTable("refresh");
+        }
+        function queryParas(paras) {
+
+
+            //paras.GR_Search_1 = $("#search").val();
+            //paras.GR_Search_2 = $("#selActivity").val();
+            return paras;
+        }
+    </script>
+}
